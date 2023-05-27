@@ -60,4 +60,4 @@ fruit_selector = streamlit.text_input('What fruit would you like to add?')
 streamlit.write('Thanks for adding ', fruit_selector)
 
 #add record to table 
-my_cur.execute("insert into fruit_load_list values(fruit_selector)")
+my_cur.execute("insert into fruit_load_list values('fruit_selector')")
